@@ -1,0 +1,15 @@
+/home/apaudyal/CSharp/DisjointSets/bin/Debug/net6.0/DisjointSets
+/home/apaudyal/CSharp/DisjointSets/bin/Debug/net6.0/DisjointSets.deps.json
+/home/apaudyal/CSharp/DisjointSets/bin/Debug/net6.0/DisjointSets.runtimeconfig.json
+/home/apaudyal/CSharp/DisjointSets/bin/Debug/net6.0/DisjointSets.dll
+/home/apaudyal/CSharp/DisjointSets/bin/Debug/net6.0/ref/DisjointSets.dll
+/home/apaudyal/CSharp/DisjointSets/bin/Debug/net6.0/DisjointSets.pdb
+/home/apaudyal/CSharp/DisjointSets/obj/Debug/net6.0/DisjointSets.csproj.AssemblyReference.cache
+/home/apaudyal/CSharp/DisjointSets/obj/Debug/net6.0/DisjointSets.GeneratedMSBuildEditorConfig.editorconfig
+/home/apaudyal/CSharp/DisjointSets/obj/Debug/net6.0/DisjointSets.AssemblyInfoInputs.cache
+/home/apaudyal/CSharp/DisjointSets/obj/Debug/net6.0/DisjointSets.AssemblyInfo.cs
+/home/apaudyal/CSharp/DisjointSets/obj/Debug/net6.0/DisjointSets.csproj.CoreCompileInputs.cache
+/home/apaudyal/CSharp/DisjointSets/obj/Debug/net6.0/DisjointSets.dll
+/home/apaudyal/CSharp/DisjointSets/obj/Debug/net6.0/ref/DisjointSets.dll
+/home/apaudyal/CSharp/DisjointSets/obj/Debug/net6.0/DisjointSets.pdb
+/home/apaudyal/CSharp/DisjointSets/obj/Debug/net6.0/DisjointSets.genruntimeconfig.cache
