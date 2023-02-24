@@ -1,5 +1,5 @@
 public class Graph : GraphInterface{
-    private class Node{
+    internal class Node{
         public int vertex{get;set;}
         public Node? next{get;set;}
 
@@ -10,13 +10,16 @@ public class Graph : GraphInterface{
 }
     bool[] visited;
     Node?[] adjacencyList;
+    int[] parentList;
 
     public Graph(int numVertices){
         adjacencyList = new Node[numVertices];
         visited = new bool[numVertices];
+        parentList = new int[numVertices];
         for(int i = 0; i < numVertices; i++){
             adjacencyList[i] = null; 
             visited[i] = false;
+            parentList[i] = -1;
         }
     }
 
@@ -27,7 +30,6 @@ public class Graph : GraphInterface{
         Node? current = adjacencyList[source];
 
         if(current == null){
-            Console.WriteLine(current);
             return false;
         }
 
@@ -58,7 +60,7 @@ public class Graph : GraphInterface{
     private void addEdgeHelper(int source, int target){
         Node? currentVertex = this.adjacencyList[source];
         if(currentVertex == null){
-            currentVertex = new Node(target);
+            this.adjacencyList[source] = new Node(target);
         }
         else{
             while(currentVertex.next != null){
@@ -77,7 +79,7 @@ public class Graph : GraphInterface{
         }
 
         removeEdgeHelper(source, target);
-        removeEdgeHelper(source,target);
+        removeEdgeHelper(target,source);
     }
 
     private void removeEdgeHelper(int source, int target){
@@ -87,12 +89,10 @@ public class Graph : GraphInterface{
         }
 
         if(currentVertex.next == null){
-            currentVertex = null;
+            this.adjacencyList[source] = null;
         }
         else{
-            while(currentVertex.next != null){
-                if(currentVertex.next.vertex == target)
-                    break;
+            while(currentVertex.next.vertex != target){
                 currentVertex = currentVertex.next;
             }
             currentVertex.next = currentVertex.next.next;
@@ -114,11 +114,43 @@ public class Graph : GraphInterface{
         }
     }
 
+    private bool _dfs(int source, bool hasCycle){
+        Console.WriteLine(source);
+        visited[source] = true;
+        Node? walker = this.adjacencyList[source];
+        while(walker != null && !hasCycle){
+            if(!visited[walker.vertex]){
+                parentList[walker.vertex] = source;
+                hasCycle = _dfs(walker.vertex, hasCycle);
+            }
+            else if(parentList[source] != walker.vertex && visited[walker.vertex]){
+                hasCycle = true;
+            }
+            walker = walker.next;
+        }
+        return hasCycle;
+    }
+
+    public bool hasCycle(int source){
+        if(this.adjacencyList[source] == null){
+            return false;
+        }
+        else{
+            return this._dfs(source, false);
+        }
+    }
     public static void Main(){
         Graph g = new Graph(5);
         g.addEdge(0,1);
-        Console.WriteLine(g.containsEdge(0,1));
-       // g.displayGraph();
+        g.addEdge(1,2);
+        //g.addEdge(2,3);
+        //g.addEdge(0,3);
+        g.addEdge(2,3);
+        g.addEdge(3,1);
+        g.addEdge(1,4);
+        g.addEdge(3,4);
+        g.displayGraph();
+        Console.WriteLine(g.hasCycle(0));
     }
 
 
