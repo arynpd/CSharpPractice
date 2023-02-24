@@ -1,3 +1,5 @@
-public interface GraphInterface<T> where T : IComparable<T>{
-    
+public interface GraphInterface{
+    public void addEdge(int source, int target);
+    public void removeEdge(int source, int target);
+    public bool containsEdge(int source, int target);
 }

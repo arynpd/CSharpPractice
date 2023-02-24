@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/apaudyal/CSharp/graphs/graphs.csproj": {}
+    "/home/apaudyal/CSharp/Graphs/graphs.csproj": {}
   },
   "projects": {
-    "/home/apaudyal/CSharp/graphs/graphs.csproj": {
+    "/home/apaudyal/CSharp/Graphs/graphs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/apaudyal/CSharp/graphs/graphs.csproj",
+        "projectUniqueName": "/home/apaudyal/CSharp/Graphs/graphs.csproj",
         "projectName": "graphs",
-        "projectPath": "/home/apaudyal/CSharp/graphs/graphs.csproj",
+        "projectPath": "/home/apaudyal/CSharp/Graphs/graphs.csproj",
         "packagesPath": "/home/apaudyal/.nuget/packages/",
-        "outputPath": "/home/apaudyal/CSharp/graphs/obj/",
+        "outputPath": "/home/apaudyal/CSharp/Graphs/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/apaudyal/.nuget/NuGet/NuGet.Config"
