@@ -63,10 +63,8 @@ public class Graph : GraphInterface{
             this.adjacencyList[source] = new Node(target);
         }
         else{
-            while(currentVertex.next != null){
-                currentVertex = currentVertex.next;
-            }
-            currentVertex.next = new Node(target);
+            this.adjacencyList[source] = new Node(target);
+            this.adjacencyList[source].next = currentVertex;
         }
     }
 
@@ -99,23 +97,22 @@ public class Graph : GraphInterface{
         }
     }
 
-    public void displayGraph(){
+    public void displayGraph(StreamWriter fs){
         int j = 0;
         Node? current;
         foreach(Node? i in adjacencyList){
-            Console.Write($"Vertex {j}:");
+            fs.Write($"Vertex {j}:");
             current = i;
             while(current != null){
-                Console.Write($"{current.vertex}");
+                fs.Write($"{current.vertex}");
                 current = current.next;
             }
             j++;
-            Console.WriteLine();
+            fs.WriteLine();
         }
     }
 
     private bool _dfs(int source, bool hasCycle){
-        Console.WriteLine(source);
         visited[source] = true;
         Node? walker = this.adjacencyList[source];
         while(walker != null && !hasCycle){
@@ -139,7 +136,7 @@ public class Graph : GraphInterface{
             return this._dfs(source, false);
         }
     }
-    public static void Main(){
+    /*public static void Main(){
         Graph g = new Graph(5);
         g.addEdge(0,1);
         g.addEdge(1,2);
@@ -151,7 +148,7 @@ public class Graph : GraphInterface{
         g.addEdge(3,4);
         g.displayGraph();
         Console.WriteLine(g.hasCycle(0));
-    }
+    }*/
 
 
 }
