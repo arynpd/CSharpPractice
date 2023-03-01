@@ -12,6 +12,7 @@ public class FilePractice{
         g.addEdge(3,4);
         g.displayGraph(fs);
         fs.WriteLine(g.hasCycle(0));
+        g.bfs(0,fs);
         fs.Close();
     }
 }

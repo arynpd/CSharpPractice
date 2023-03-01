@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 public class Graph : GraphInterface{
     internal class Node{
         public int vertex{get;set;}
@@ -112,7 +113,14 @@ public class Graph : GraphInterface{
         }
     }
 
+    private void resetVisited(){
+        for(int i = 0; i < this.visited.Length; i++){
+            this.visited[i] = false;
+        }
+    }
+
     private bool _dfs(int source, bool hasCycle){
+        this.resetVisited();
         visited[source] = true;
         Node? walker = this.adjacencyList[source];
         while(walker != null && !hasCycle){
@@ -134,6 +142,24 @@ public class Graph : GraphInterface{
         }
         else{
             return this._dfs(source, false);
+        }
+    }
+
+    public void bfs(int source, StreamWriter fs){
+        this.resetVisited();
+        Queue<int> layers = new Queue<int>();
+        layers.Enqueue(source);
+        while(layers.Count != 0){
+            int currentVertex = layers.Dequeue();
+            fs.WriteLine(currentVertex);
+            Node? currentNeighbor = this.adjacencyList[currentVertex];
+            while(currentNeighbor != null){
+                if(!visited[currentNeighbor.vertex]){
+                    visited[currentNeighbor.vertex] = true;
+                    layers.Enqueue(currentNeighbor.vertex);
+                }
+                currentNeighbor = currentNeighbor.next;
+            }
         }
     }
     /*public static void Main(){
