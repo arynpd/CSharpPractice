@@ -120,7 +120,6 @@ public class Graph : GraphInterface{
     }
 
     private bool _dfs(int source, bool hasCycle){
-        this.resetVisited();
         visited[source] = true;
         Node? walker = this.adjacencyList[source];
         while(walker != null && !hasCycle){
@@ -141,6 +140,7 @@ public class Graph : GraphInterface{
             return false;
         }
         else{
+            this.resetVisited();
             return this._dfs(source, false);
         }
     }
