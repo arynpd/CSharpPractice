@@ -146,9 +146,9 @@ public class Graph : GraphInterface{
     }
 
     public void bfs(int source, StreamWriter fs){
-        this.resetVisited();
         Queue<int> layers = new Queue<int>();
         layers.Enqueue(source);
+        this.visited[source] = true;
         while(layers.Count != 0){
             int currentVertex = layers.Dequeue();
             fs.WriteLine(currentVertex);
@@ -159,6 +159,16 @@ public class Graph : GraphInterface{
                     layers.Enqueue(currentNeighbor.vertex);
                 }
                 currentNeighbor = currentNeighbor.next;
+            }
+        }
+    }
+
+    public void bfsAll(StreamWriter fs){
+        this.resetVisited();
+        for(int i = 0; i < this.visited.Length; i++){
+            if(this.visited[i] == false){
+                fs.WriteLine($"New source: {i}");
+                bfs(i,fs);
             }
         }
     }
