@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I9IHv3U9Nh4Yq9Ae2lMQqbxKOByfXcxOWNP1/Mo0ncsX4IDw1cZHF1g8lWhrbcdMakMr5IOIvLJp7mugTbLmRw==",
+  "dgSpecHash": "8RPmRHHsmVHisgxKV0PJnHiR5e/6cXCjJcAzJrD2mR1yWM4xxmWxzfU+QdXjp5LPK7EJgPn6HtoUtE4Q/9S7/Q==",
   "success": true,
-  "projectFilePath": "/home/apaudyal/CSharpPractice/Graphs/graphs.csproj",
+  "projectFilePath": "/home/apaudyal/CSharp/Graphs/graphs.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

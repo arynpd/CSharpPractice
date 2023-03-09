@@ -12,15 +12,18 @@ public class Graph : GraphInterface{
     bool[] visited;
     Node?[] adjacencyList;
     int[] parentList;
+    bool[] color;
 
     public Graph(int numVertices){
         adjacencyList = new Node[numVertices];
         visited = new bool[numVertices];
         parentList = new int[numVertices];
+        color = new bool[numVertices];
         for(int i = 0; i < numVertices; i++){
             adjacencyList[i] = null; 
             visited[i] = false;
             parentList[i] = -1;
+            color[i] = false;
         }
     }
 
@@ -147,15 +150,22 @@ public class Graph : GraphInterface{
 
     public void bfs(int source, StreamWriter fs){
         Queue<int> layers = new Queue<int>();
+        int layerCounter = 0;
         layers.Enqueue(source);
         this.visited[source] = true;
+        this.color[source] = true;
         while(layers.Count != 0){
             int currentVertex = layers.Dequeue();
             fs.WriteLine(currentVertex);
+            layerCounter++;
             Node? currentNeighbor = this.adjacencyList[currentVertex];
             while(currentNeighbor != null){
                 if(!visited[currentNeighbor.vertex]){
                     visited[currentNeighbor.vertex] = true;
+                    if(layerCounter%2==0)
+                        color[currentNeighbor.vertex] = true;
+                    else
+                        color[currentNeighbor.vertex] = false; 
                     layers.Enqueue(currentNeighbor.vertex);
                 }
                 currentNeighbor = currentNeighbor.next;
@@ -171,6 +181,22 @@ public class Graph : GraphInterface{
                 bfs(i,fs);
             }
         }
+    }
+
+    public bool checkBipartite(){
+        bool currentVertexColor = false;
+        Node? current;
+        for(int i = 0; i < this.adjacencyList.Length; i++){
+            currentVertexColor = this.color[i];
+            current = this.adjacencyList[i];
+            while(current!=null){
+                if(this.color[current.vertex] == currentVertexColor){
+                    return false;
+                }
+                current = current.next;
+            }
+        }
+        return true;
     }
     /*public static void Main(){
         Graph g = new Graph(5);
