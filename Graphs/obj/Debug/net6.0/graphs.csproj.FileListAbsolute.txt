@@ -2,7 +2,6 @@
 /mnt/c/Users/Aaryan Paudyal/CSharp/graphs/bin/Debug/net6.0/graphs.deps.json
 /mnt/c/Users/Aaryan Paudyal/CSharp/graphs/bin/Debug/net6.0/graphs.runtimeconfig.json
 /mnt/c/Users/Aaryan Paudyal/CSharp/graphs/bin/Debug/net6.0/graphs.dll
-/mnt/c/Users/Aaryan Paudyal/CSharp/graphs/bin/Debug/net6.0/ref/graphs.dll
 /mnt/c/Users/Aaryan Paudyal/CSharp/graphs/bin/Debug/net6.0/graphs.pdb
 /mnt/c/Users/Aaryan Paudyal/CSharp/graphs/obj/Debug/net6.0/graphs.csproj.AssemblyReference.cache
 /mnt/c/Users/Aaryan Paudyal/CSharp/graphs/obj/Debug/net6.0/graphs.GeneratedMSBuildEditorConfig.editorconfig
@@ -43,3 +42,4 @@
 /home/apaudyal/CSharpPractice/Graphs/bin/Debug/net6.0/ref/graphs.dll
 /home/apaudyal/CSharpPractice/Graphs/bin/Debug/net6.0/graphs.pdb
 /home/apaudyal/CSharpPractice/Graphs/obj/Debug/net6.0/graphs.genruntimeconfig.cache
+/mnt/c/Users/Aaryan Paudyal/CSharp/Graphs/obj/Debug/net6.0/refint/graphs.dll

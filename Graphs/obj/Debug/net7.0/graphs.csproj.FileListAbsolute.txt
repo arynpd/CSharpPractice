@@ -1,0 +1,15 @@
+/mnt/c/Users/Aaryan Paudyal/CSharp/Graphs/bin/Debug/net7.0/graphs
+/mnt/c/Users/Aaryan Paudyal/CSharp/Graphs/bin/Debug/net7.0/graphs.deps.json
+/mnt/c/Users/Aaryan Paudyal/CSharp/Graphs/bin/Debug/net7.0/graphs.runtimeconfig.json
+/mnt/c/Users/Aaryan Paudyal/CSharp/Graphs/bin/Debug/net7.0/graphs.dll
+/mnt/c/Users/Aaryan Paudyal/CSharp/Graphs/bin/Debug/net7.0/graphs.pdb
+/mnt/c/Users/Aaryan Paudyal/CSharp/Graphs/obj/Debug/net7.0/graphs.csproj.AssemblyReference.cache
+/mnt/c/Users/Aaryan Paudyal/CSharp/Graphs/obj/Debug/net7.0/graphs.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/c/Users/Aaryan Paudyal/CSharp/Graphs/obj/Debug/net7.0/graphs.AssemblyInfoInputs.cache
+/mnt/c/Users/Aaryan Paudyal/CSharp/Graphs/obj/Debug/net7.0/graphs.AssemblyInfo.cs
+/mnt/c/Users/Aaryan Paudyal/CSharp/Graphs/obj/Debug/net7.0/graphs.csproj.CoreCompileInputs.cache
+/mnt/c/Users/Aaryan Paudyal/CSharp/Graphs/obj/Debug/net7.0/graphs.dll
+/mnt/c/Users/Aaryan Paudyal/CSharp/Graphs/obj/Debug/net7.0/refint/graphs.dll
+/mnt/c/Users/Aaryan Paudyal/CSharp/Graphs/obj/Debug/net7.0/graphs.pdb
+/mnt/c/Users/Aaryan Paudyal/CSharp/Graphs/obj/Debug/net7.0/graphs.genruntimeconfig.cache
+/mnt/c/Users/Aaryan Paudyal/CSharp/Graphs/obj/Debug/net7.0/ref/graphs.dll

@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net7.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net7.0": []
   },
   "packageFolders": {
     "/home/apaudyal/.nuget/packages/": {}
@@ -13,24 +13,24 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/apaudyal/CSharp/Graphs/graphs.csproj",
+      "projectUniqueName": "/mnt/c/Users/Aaryan Paudyal/CSharp/Graphs/graphs.csproj",
       "projectName": "graphs",
-      "projectPath": "/home/apaudyal/CSharp/Graphs/graphs.csproj",
+      "projectPath": "/mnt/c/Users/Aaryan Paudyal/CSharp/Graphs/graphs.csproj",
       "packagesPath": "/home/apaudyal/.nuget/packages/",
-      "outputPath": "/home/apaudyal/CSharp/Graphs/obj/",
+      "outputPath": "/mnt/c/Users/Aaryan Paudyal/CSharp/Graphs/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/apaudyal/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net7.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "projectReferences": {}
         }
       },
@@ -41,15 +41,16 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net7.0": {
+        "targetAlias": "net7.0",
         "imports": [
           "net461",
           "net462",
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -58,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.113/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
       }
     }
   }
