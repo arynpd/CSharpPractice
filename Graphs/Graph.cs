@@ -46,7 +46,7 @@ public class Graph : GraphInterface{
         return false;
     }
 
-    public void addEdge(int source, int target){
+    public void addEdge(int source, int target, int weight=1){
         if(source < 0 || target < 0){
             return;
         }
